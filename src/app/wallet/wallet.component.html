@@ -1,7 +1,10 @@
 <h1>Web3 Wallet</h1>
 <input type="text" [(ngModel)]="value">
-<button (click)="connectwallet()">sign in</button>
-<p id="address">Address: Not connected</p>
-<p id="balance">Balance: -</p>
-<button (click)="decryptWallet()">Call Parent Function</button>
+<button (click)="createwallet()">sign in</button>
+<button (click)="connectwallet()">Call Parent Function</button>
+<button (click)="changewallet()">change wallet</button>
 <button (click)="getgasPrice()">get gas price</button>
+<button (click)="getBalance()">get balance</button>
+<button (click)="sendETH()">sendETH</button>
+<button (click)="getgasPrice()">gasprice</button>
+<p *ngIf="check">{{address}}</p>
